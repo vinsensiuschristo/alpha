@@ -29,11 +29,16 @@ import java.util.ArrayList;
 
 public class ListHeroAdapter extends RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>{
 
+    private OnItemClickCallback onItemClickCallback;
     private ArrayList<Hero> listHero;
     private Object MainActivity;
 
     public ListHeroAdapter(ArrayList<Hero> list) {
         this.listHero = list;
+    }
+
+    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback;
     }
 
     @NonNull
@@ -70,6 +75,13 @@ public class ListHeroAdapter extends RecyclerView.Adapter<ListHeroAdapter.ListVi
             }
         });
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onItemClickCallback.onItemClicked(listHero.get(holder.getAdapterPosition()));
+            }
+        });
+
     }
 
     @Override
@@ -91,6 +103,10 @@ public class ListHeroAdapter extends RecyclerView.Adapter<ListHeroAdapter.ListVi
             btnUpdate = itemView.findViewById(R.id.btnUpdate);
             btnDetail = itemView.findViewById(R.id.btnDetail);
         }
+    }
+
+    public interface OnItemClickCallback {
+        void onItemClicked(Hero data);
     }
 }
 

@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alpha">
         <activity
-            android:name=".Fragment.DetailProjectActivity"
+            android:name=".Fragment.ReportActivity"
             android:exported="true"
             android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".Fragment.DetailProjectActivity"
+            android:exported="true"
+            android:parentActivityName=".Fragment.DetailProjectActivity" />
         <activity
             android:name=".Fragment.ActivityDownload"
             android:exported="true"

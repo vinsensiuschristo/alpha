@@ -15,6 +15,7 @@ import com.example.alpha.Fragment.AboutFragment;
 import com.example.alpha.Fragment.ActivityDownload;
 import com.example.alpha.Fragment.ActivityHome;
 import com.example.alpha.Fragment.ProfileFragment;
+import com.example.alpha.Fragment.ReportActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -57,6 +58,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.download:
                 Intent downloadIntent = new Intent(this, ActivityDownload.class);
                 startActivity(downloadIntent);
+                break;
+            case R.id.report:
+                Intent reportIntent = new Intent(this, ReportActivity.class);
+                startActivity(reportIntent);
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
