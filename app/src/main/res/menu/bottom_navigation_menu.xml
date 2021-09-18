@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/map"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="MAP" />
+    <item
+        android:id="@+id/unfinished"
+        android:enabled="true"
+        android:icon="@drawable/error"
+        android:title="UNFINISHED"/>
+    <item
+        android:id="@+id/notUpload"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_image_not_uploaded"
+        android:title="NOT UPLOAD"/>
+    <item
+        android:id="@+id/upload"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_arrow_circle_up_24"
+        android:title="UPLOAD"/>
+</menu>
