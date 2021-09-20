@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        app:showAsAction="ifRoom"
+        android:title="TODO">
+            <menu>
+                <item
+                    android:id="@+id/download"
+                    android:icon="@drawable/ic_baseline_cloud_download_24"
+                    android:title="Download"
+                    app:showAsAction="never"
+                    android:iconTint="@color/black"/>
+                <item
+                    android:id="@+id/addNew"
+                    android:icon="@drawable/ic_baseline_post_add_24"
+                    android:title="Add New"/>
+                <item
+                    android:id="@+id/testSurvey"
+                    android:icon="@drawable/ic_baseline_assignment_24"
+                    android:title="Test Survey"/>
+                <item
+                    android:id="@+id/callback"
+                    android:icon="@drawable/ic_baseline_phone_callback_24"
+                    android:title="Call Back"/>
+            </menu>
+    </item>
+
+</menu>
