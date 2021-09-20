@@ -12,8 +12,14 @@
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/circle.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/grad.xml" value="0.3828125" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.1" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_announcement_24.xml" value="0.17777777777777778" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_assignment_24.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_cloud_download_24.xml" value="0.3828125" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_event_note_24.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_phone_callback_24.xml" value="0.1" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_post_add_24.xml" value="0.1" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.3828125" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3828125" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/drawable/test_survey_background.xml" value="0.3828125" />
@@ -32,7 +38,9 @@
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/layout/progress_dialog.xml" value="0.24592391304347827" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/layout/setting_enumerator.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/menu/detail_activity_menu.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/menu/menu.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/menu/menu_download.xml" value="0.1" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/mipmap-anydpi-v26/test_survey.xml" value="0.3828125" />
         <entry key="..\:/Users/IT/AndroidStudioProjects/alpha/app/src/main/res/mipmap-anydpi-v26/test_survey_round.xml" value="0.221875" />
