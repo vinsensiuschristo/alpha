@@ -38,5 +38,13 @@
     <color name="CPP">#EF5350</color>
     <color name="Java">#29B6F6</color>
 
+<!--    new theme-->
+    <color name="primaryGRP">#1b5e20</color>
+    <color name="primaryLightGRP">#4c8c4a</color>
+    <color name="primaryDarkGRP">#003300</color>
+
+    <color name="secondaryGRP">#616161</color>
+    <color name="secondaryLightGRP">#8e8e8e</color>
+    <color name="secondaryDarkGRP">#373737</color>
 
 </resources>

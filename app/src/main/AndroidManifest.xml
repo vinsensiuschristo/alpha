@@ -16,15 +16,18 @@
         <activity
             android:name=".Fragment.DetailProjectActivity"
             android:exported="true"
-            android:parentActivityName=".Fragment.DetailProjectActivity" />
+            android:parentActivityName=".Fragment.DetailProjectActivity"
+            android:theme="@style/Theme.Alpha2"/>
         <activity
             android:name=".Fragment.ActivityDownload"
             android:exported="true"
-            android:parentActivityName=".HomeActivity" />
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.Alpha2"/>
         <activity
             android:name=".Fragment.ActivityHome"
             android:exported="true"
-            android:parentActivityName=".HomeActivity" />
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.Alpha2"/>
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.AlphaNoActionBar" />

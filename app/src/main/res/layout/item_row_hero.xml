@@ -59,17 +59,18 @@
             android:layout_toEndOf="@id/img_item_photo"
             android:layout_toRightOf="@id/img_item_photo"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnDetail"
-                style="@style/Widget.AppCompat.Button.Colored"
+                style="@style/secondaryGRPButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/favorite"
-                android:textSize="12sp" />
+                android:textSize="12sp"/>
             <Button
                 android:id="@+id/btnUpdate"
-                style="@style/Widget.AppCompat.Button.Colored"
+                style="@style/secondaryGRPButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
