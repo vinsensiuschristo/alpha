@@ -12,7 +12,8 @@
         <activity
             android:name=".Fragment.ReportActivity"
             android:exported="true"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.Alpha2"/>
         <activity
             android:name=".Fragment.DetailProjectActivity"
             android:exported="true"

@@ -60,15 +60,15 @@
             android:layout_toRightOf="@id/img_item_photo"
             android:orientation="horizontal">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnDetail"
                 style="@style/secondaryGRPButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/favorite"
-                android:textSize="12sp"/>
-            <Button
+                android:textSize="12sp" />
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnUpdate"
                 style="@style/secondaryGRPButton"
                 android:layout_width="match_parent"
