@@ -6,21 +6,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
+import com.example.alpha.Data.Hero;
+import com.example.alpha.Data.HeroesData;
+import com.example.alpha.Data.ListHeroAdapter;
 import com.example.alpha.Fragment.AboutFragment;
 import com.example.alpha.Fragment.ActivityDownload;
 import com.example.alpha.Fragment.ActivityHome;
+import com.example.alpha.Fragment.DetailProjectActivity;
 import com.example.alpha.Fragment.ProfileFragment;
 import com.example.alpha.Fragment.ReportActivity;
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ArrayList;
+
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private DrawerLayout drawerLayout;
+    private RecyclerView rvHeroes;
+    private ArrayList<Hero> list = new ArrayList<>();
+    Button btnUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +41,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         drawerLayout = findViewById(R.id.nav_view);
         Toolbar toolbar = findViewById(R.id.toolbar);
+
+        rvHeroes = findViewById(R.id.rv_heroes);
+        rvHeroes.setHasFixedSize(true);
+        btnUpdate = findViewById(R.id.btnUpdate);
+
+        list.addAll(HeroesData.getListData());
+        showRecyclerList();
 
         NavigationView navigationView = findViewById(R.id.navigation_view);
 
@@ -52,7 +71,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AboutFragment()).commit();
                 break;
             case R.id.home:
-                Intent homeIntent = new Intent(this, ActivityHome.class);
+                Intent homeIntent = new Intent(this, HomeActivity.class);
                 startActivity(homeIntent);
                 break;
             case R.id.download:
@@ -66,5 +85,20 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    //munculin recyclerList
+    private void showRecyclerList(){
+        rvHeroes.setLayoutManager(new LinearLayoutManager(this));
+        ListHeroAdapter listHeroAdapter = new ListHeroAdapter(list);
+        rvHeroes.setAdapter(listHeroAdapter);
+
+        listHeroAdapter.setOnItemClickCallback(new ListHeroAdapter.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(Hero data) {
+                Intent homeIntent = new Intent(getApplicationContext(), DetailProjectActivity.class);
+                startActivity(homeIntent);
+            }
+        });
     }
 }
